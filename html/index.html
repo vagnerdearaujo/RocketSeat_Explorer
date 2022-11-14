@@ -1,0 +1,57 @@
+<!-- Comentários -->
+<h1>First HTML Tag</h1>
+<!-- 
+    Alguns elementos não possuem a barra de fechamento
+    img e input são alguns destes elementos.
+    são chamados de elementos vazios
+-->
+<input type="text" name="texto" value="Default">  
+
+<!--
+    Atributos globais mais utilizados
+    -- class
+    -- contenteditable
+    -- data -*
+    -- hidden
+    -- id
+    -- style
+    -- tabindex
+    -- title
+-->
+
+<div>
+    
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/lang">Para saber mais sobre atributos globais </a> </a></p>
+</div>
+
+<div class="carrinho" contenteditable="true" id="carrinho-1" title="Mostra um tooltip na página">
+    <!-- Ao criar um elemento classe torna possível atribuir css ou acessar via javascript-->
+    Conteúdo da classe !!!!<br/>
+    carrinho-1<br/>
+    Este valor poderá ser modificado na página devido ao contenteditable
+</div>
+
+<div class="carrinho" data-id="list" id="carrinho-2" style="color:blue">
+    <!-- O mesmo identificador da classe pode ser usado mais de uma vez-->
+    <!-- o Data-* permite criar um identificador de tipo para a classe, seria como tipar uma classe como se fosse uma lista, combo ou qualquer outro tipo de objeto-->
+    <!-- o id permite criar um identificador único para o elemento que não deve ser repetido, se houver repetições, não haverá um erro formal, porém as coisas sairão do controle-->
+    <!-- a tag style normalmente não colocada diretamente na classe, pois isto costuma ser feito via css-->
+    carrinho-2
+</div>
+
+<div class="carrinho" hidden id="carrinho-3">
+    <!-- o hidden fez com que todo o conteúdo colocado nesta div fique oculto-->
+    carrinho-3
+</div>
+
+<!-- 
+    Desafio 1
+    Dois parágrafos com ênfase em algumas palavras e 1 link para o Google
+    Não vou direcionar para o google, vou direcionar para a documentação da mozilla
+-->
+
+<div>
+    <p><em>HTML</em> é chato de escrever porém, muito poderoso</p>
+    <p>Há diversos tipos de <em><strong>atributos</strong></em></p>
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/lang">Saiba mais neste link</a></p>
+</div>

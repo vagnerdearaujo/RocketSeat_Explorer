@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando CSS à página</title>
+    <style>
+        /*
+            Define-se o estilo de toda a página
+            O estilo da página tem menos prioridade que o estilo definido diretamente no elemento
+        */
+        h1 {
+            font-size: 24px;
+            color: white;
+            background-color: gray;
+            border: 2px solid blue;
+        }
+
+        h2 {
+            font-size: 18px;
+            border: 1px solid red
+        }
+
+        strong {
+            align-self: center;
+            border: 1px solid red;
+        }
+
+        /* 
+            Não existe uma tag destaque no html.
+            Porém ao declarar destque aqui, o motor vai entender este estilo
+            sempre que eu utilizar <destaque>Texto</destaque>
+        */
+        destaque {
+            color: yellow;
+            background-color: red;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>O CSS pode ser adicionado usado uma das formas:</h1>
+    <p>
+        <strong>#Inline</strong>
+        <li>atribute style</li>
+    </p>
+    <p>
+        <strong>#&ltstyle&gt</strong>
+        <li>Tag HTML que conterá o css</li>
+    </p>
+    <p>
+        <strong>#link</strong>
+        <li>Arquivo css externo</li>
+    </p>
+    <p>
+        <strong>#@import</strong>
+        <li>Arquivo css externo</li>
+    </p>
+
+    <p>Exemplo #inline:</p>
+    <h2 style="color:blue">
+        Texto em azul
+        <b style="color:red"> com vermelho</b>
+    </h1>
+
+    <p>Exemplo <destaque>#&ltstyle&gt</destaque> na seção head deste html:</p>
+    <p>Exemplo de link na seção head deste form</p>
+    <li>&ltlink rel="stylesheet" href="style.css"&gt</li>
+      
+    <p>&ltdiv&gt configurada com o  estilo do <destaque>style.css</destaque></p>
+    <div>
+        teste
+    </div>
+    <p>Exemplo: <destaque>@import</destaque> </p>
+    <p>A diretiva import funciona da mesma forma que a diretiva link, porém:</p>
+    <li>Se for utilizada dentro da página deve ser colocada na cláusula &ltstyle&gt da seção &lthead&gt.</li>
+    <li>Se for utilizada dentro do arquivo <destaque>.css</destaque>, deve estar no topo do arquivo</li>
+</body>
+</html>
+
